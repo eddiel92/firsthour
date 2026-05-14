@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FirstHour Privacy Policy</title>
+  <meta name="description" content="FirstHour V1 privacy policy. Local-only wake settings, QR tag, reflection notes, and completion history.">
+  <style>
+    :root {
+      --charcoal: #111827;
+      --orange: #ff7a3d;
+      --cream: #fff8f2;
+      --muted: #6b7280;
+      --line: #eadfd6;
+      color-scheme: light;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0;
+    }
+
+    .mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
+      margin-bottom: 28px;
+    }
+
+    .sun {
+      width: 44px;
+      height: 28px;
+      border-radius: 44px 44px 0 0;
+      background: var(--orange);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sun::after {
+      content: "";
+      position: absolute;
+      left: -6px;
+      right: -6px;
+      bottom: -12px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--charcoal);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.25rem;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .lede {
+      font-size: 1.2rem;
+      color: var(--charcoal);
+      max-width: 620px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      margin-top: 28px;
+      box-shadow: 0 18px 48px rgba(17, 24, 39, 0.06);
+    }
+
+    a {
+      color: var(--charcoal);
+      text-decoration-color: var(--orange);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"><div class="sun"></div></div>
+    <h1>FirstHour Privacy Policy</h1>
+    <p class="lede">FirstHour V1 is local-only. Your wake settings, QR tag, reflection notes, and completion history stay on this device.</p>
+
+    <section class="card" aria-labelledby="local-data">
+      <h2 id="local-data">Local Data</h2>
+      <p>FirstHour stores the following data locally on your device:</p>
+      <ul>
+        <li>Daily wake time and morning label</li>
+        <li>QR tag label and local tag token</li>
+        <li>Prompt pack selection</li>
+        <li>Completion records</li>
+        <li>Reflection text</li>
+      </ul>
+      <p>Data is stored with Codable JSON in the app's local Application Support directory.</p>
+    </section>
+
+    <section class="card" aria-labelledby="no-backend">
+      <h2 id="no-backend">No Backend, Accounts, Or Cloud Sync</h2>
+      <p>FirstHour V1 has no backend, no accounts, no cloud sync, and no server uploads. Data does not leave the device unless you choose to share a tag or proof card through the native iOS share sheet.</p>
+    </section>
+
+    <section class="card" aria-labelledby="excluded">
+      <h2 id="excluded">V1 Exclusions</h2>
+      <p>FirstHour V1 does not use AI, image recognition, partner notifications, HealthKit, step tracking, subscriptions, payments, Screen Time, FamilyControls, private APIs, or system-level app blocking.</p>
+      <p>FirstHour V1 uses iOS notifications as wake prompts. Keep your normal alarm enabled if you need a guaranteed alarm.</p>
+    </section>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For support, email <a href="mailto:support@usefirsthour.com">support@usefirsthour.com</a> or visit the <a href="https://eddiel92.github.io/firsthour/support/">FirstHour support page</a>.</p>
+    </section>
+
+    <footer>
+      Last updated: May 14, 2026
+    </footer>
+  </main>
+</body>
+</html>
