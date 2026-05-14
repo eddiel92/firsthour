@@ -6,87 +6,16 @@
   <title>FirstHour Support</title>
   <meta name="description" content="FirstHour support information.">
   <style>
-    :root {
-      --charcoal: #111827;
-      --orange: #ff7a3d;
-      --cream: #fff8f2;
-      --muted: #6b7280;
-      --line: #eadfd6;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-      background: var(--cream);
-      color: var(--charcoal);
-      line-height: 1.6;
-    }
-
-    main {
-      width: min(720px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 64px 0;
-    }
-
-    .mark {
-      width: 72px;
-      height: 72px;
-      border-radius: 22px;
-      background: #fff;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
-      margin-bottom: 28px;
-      border: 1px solid var(--line);
-    }
-
-    .sun {
-      width: 44px;
-      height: 28px;
-      border-radius: 44px 44px 0 0;
-      background: var(--orange);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .sun::after {
-      content: "";
-      position: absolute;
-      left: -6px;
-      right: -6px;
-      bottom: -12px;
-      height: 22px;
-      border-radius: 50%;
-      background: var(--charcoal);
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      line-height: 1;
-      margin: 0 0 16px;
-      letter-spacing: 0;
-    }
-
-    p {
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-
-    .card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 24px;
-      margin-top: 28px;
-      box-shadow: 0 18px 48px rgba(17, 24, 39, 0.06);
-    }
-
-    a {
-      color: var(--charcoal);
-      text-decoration-color: var(--orange);
-      text-decoration-thickness: 2px;
-      text-underline-offset: 3px;
-    }
+    :root { --charcoal: #111827; --orange: #ff7a3d; --cream: #fff8f2; --muted: #6b7280; --line: #eadfd6; color-scheme: light; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; background: var(--cream); color: var(--charcoal); line-height: 1.6; }
+    main { width: min(720px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
+    .mark { width: 72px; height: 72px; border-radius: 22px; background: #fff; display: grid; place-items: center; box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08); margin-bottom: 28px; border: 1px solid var(--line); }
+    .sun { width: 44px; height: 28px; border-radius: 44px 44px 0 0; background: var(--orange); position: relative; overflow: hidden; }
+    .sun::after { content: ""; position: absolute; left: -6px; right: -6px; bottom: -12px; height: 22px; border-radius: 50%; background: var(--charcoal); }
+    h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; margin: 0 0 16px; letter-spacing: 0; }
+    p { color: var(--muted); font-size: 1.08rem; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 24px; margin-top: 28px; box-shadow: 0 18px 48px rgba(17, 24, 39, 0.06); }
+    a { color: var(--charcoal); text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -97,7 +26,7 @@
 
     <section class="card" aria-labelledby="contact">
       <h2 id="contact">Contact</h2>
-      <p>Email <a href="mailto:support@usefirsthour.com">support@usefirsthour.com</a> for support.</p>
+      <p>Email <a href="mailto:eddie@litonjua.com">eddie@litonjua.com</a> for support.</p>
     </section>
 
     <section class="card" aria-labelledby="limits">
